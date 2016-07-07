@@ -84,15 +84,55 @@
 
 
 
-<meta name="description" content="leijiao,个人博客">
+<meta name="description" content="#lovelqw {
+  background: #ffe;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+  font-size: 15px;
+  color: #9a8c8c;
+}
+.hidden{display:none;}
+
+
+
+    function getRTime(){
+        var EndTime=">
 <meta property="og:type" content="website">
-<meta property="og:title" content="雷娇娇">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:title" content="mylove">
+<meta property="og:url" content="http://yoursite.com/mylove/index.html">
 <meta property="og:site_name" content="雷娇娇">
-<meta property="og:description" content="leijiao,个人博客">
+<meta property="og:description" content="#lovelqw {
+  background: #ffe;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+  font-size: 15px;
+  color: #9a8c8c;
+}
+.hidden{display:none;}
+
+
+
+    function getRTime(){
+        var EndTime=">
+<meta property="og:updated_time" content="2016-07-07T06:02:35.276Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="雷娇娇">
-<meta name="twitter:description" content="leijiao,个人博客">
+<meta name="twitter:title" content="mylove">
+<meta name="twitter:description" content="#lovelqw {
+  background: #ffe;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+  font-size: 15px;
+  color: #9a8c8c;
+}
+.hidden{display:none;}
+
+
+
+    function getRTime(){
+        var EndTime=">
 
 
 
@@ -110,7 +150,13 @@
   };
 </script>
 
-  <title> 雷娇娇 - leijiao,个人博客 </title>
+  <title>
+  
+
+  
+    mylove | 雷娇娇
+  
+</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +177,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -204,120 +248,98 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
     
-      <header class="post-header">
+      <style type="text/css">
+#lovelqw {
+  background: #ffe;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+  font-size: 15px;
+  color: #9a8c8c;
+}
+.hidden{display:none;}
+</style>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
+<script type="text/javascript">
+    function getRTime(){
+        var EndTime= new Date('2014/02/19 00:00:00'); //截止时间 前端路上 http://www.51xuediannao.com/qd63/
+        var NowTime = new Date();
+        var t =NowTime.getTime() - EndTime.getTime();
+        /*var d=Math.floor(t/1000/60/60/24);
+        t-=d*(1000*60*60*24);
+        var h=Math.floor(t/1000/60/60);
+        t-=h*60*60*1000;
+        var m=Math.floor(t/1000/60);
+        t-=m*60*1000;
+        var s=Math.floor(t/1000);*/
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-07T09:20:53+08:00" content="2016-07-07">
-              2016-07-07
-            </time>
-          </span>
+        var d=Math.floor(t/1000/60/60/24);
+        var h=Math.floor(t/1000/60/60%24);
+        var m=Math.floor(t/1000/60%60);
+        var s=Math.floor(t/1000%60);
+        var month=Math.ceil(d/30);
+        var year=Math.ceil(d/365);
 
-          
+        document.getElementById("t_d").innerHTML = d + "天";
+        document.getElementById("t_h").innerHTML = h + "时";
+        document.getElementById("t_m").innerHTML = m + "分";
+        document.getElementById("t_s").innerHTML = s + "秒";
 
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/07/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/07/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
+        document.getElementById("t_month").innerHTML = month ;
+        document.getElementById("t_year").innerHTML = year ;
+    }
+    setInterval(getRTime,1000);
+function addmusic()
+{    
+    var musicid=prompt("请输入网易云音乐歌曲id:");
+    if(musicid!='')
+     {  
+        document.getElementById("txt").innerHTML ='<embed src="http://music.163.com/style/swf/widget.swf?sid='+musicid+'&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all">'+'</embed>';
+    }
+    else
+      {  alert("音乐id不能为空.");  }
 
-          
+}
+function showmusic()
+{
+    var musicid='27836179';
+    document.getElementById("txt").innerHTML ='<embed src="http://music.163.com/style/swf/widget.swf?sid='+musicid+'&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all">'+'</embed>';
+}
+//定义"隐藏内容"的函数
+function hidcontent()
+{
+    var myele=document.getElementById("txt");
+    myele.style.display="none";
+    var myele=document.getElementById("btshow");
+    myele.style.display="block";
+    var myele=document.getElementById("bthidden");
+    myele.style.display="none";
+}
 
-          
-          
+//定义"显示内容"的函数
+function showcontent()
+{
+    var myele=document.getElementById("txt");
+    myele.style.display="block";
+    var myele=document.getElementById("bthidden");
+    myele.style.display="block";
+    var myele=document.getElementById("btshow");
+    myele.style.display="none";
+}
+showmusic();
+    </script>
 
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
+<p><blockquote class="blockquote-center"><div id="lovelqw">雷娇和金龙牵手走过了：<br>    <span id="t_d">00天</span><span id="t_h">00时</span><span id="t_m">00分</span><span id="t_s">00秒</span><br><span id="loveYear">今天是第<span id="t_month">00</span>个月，第<span id="t_year">00</span>年 ！</span></div></blockquote><form><!--当点击相应按钮，执行相应操作，为按钮添加相应事件--><input type="button" onclick="addmusic()" value="更改音乐"> <input type="button" id="bthidden" onclick="hidcontent()" value="隐藏音乐"><input type="button" id="btshow" class="hidden" onclick="showcontent()" value="显示音乐"></form><div id="txt" style="text-align: center;"><embed src="http://music.163.com/style/swf/widget.swf?sid=27836179&type=2&auto=1&width=320&height=66" width="340" height="86" allownetworking="all"><div><br><br></div></div></p>
+<blockquote>
+<p><span style="font-size: 15px;"><a href="http://leijiao.github.io/game/" target="_blank" rel="external">小游戏</a></span></p>
+</blockquote>
 
     
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -325,6 +347,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="mylove/index.html"
+           data-title="mylove" data-url="http://yoursite.com/mylove/index.html">
+      </div>
+    
+  </div>
+
 
         </div>
         
